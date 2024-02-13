@@ -19,6 +19,9 @@ export default {
       maxWidth: {
         1200: "75rem",
       },
+      backgroundImage: {
+        'newsletter': "url('./src/assets/newsletterBg.png')",
+      }
     },
     container: {
       center: true,

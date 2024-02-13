@@ -1,7 +1,7 @@
 const LatestCard = ({ img, title, price }) => {
   return (
     <div className="shadow-lg w-[360px] h-[305px]">
-      <div className="bg-[#F7F7F7] w-full h-[270px] flex items-center justify-center">
+      <div className="bg-[#F7F7F7] w-full h-[270px] flex items-center justify-center hover:scale-[0.9]">
         <img src={img} />
       </div>
       <div className="flex items-center justify-between">

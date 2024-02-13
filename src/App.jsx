@@ -1,6 +1,10 @@
 import { Route, Routes } from "react-router";
 import MainLayout from "./layouts/MainLayout";
 import { main_pages } from "./routers/MainRouter";
+import SingleProduct from "./pages/Products/SingleProduct/SingleProduct";
+import SingleLatestProduct from "./pages/Home/LatestProducts/SingleLatestProduct";
+import SingleTranding from "./pages/Home/TrendingProducts/Components/SingleTranding";
+import TopSingle from "./pages/Home/TopCategories/Components/TopSingle";
 
 function App() {
   return (
@@ -15,6 +19,10 @@ function App() {
               element={route.component}
             />
           ))}
+          <Route path="singleproduct/:id" element={<SingleProduct />} />
+          <Route path="latestproduct/:id" element={<SingleLatestProduct />} />
+          <Route path="trandingproduct/:id" element={<SingleTranding />} />
+          <Route path="topcategory/:id" element={<TopSingle/>}/>
         </Route>
       </Routes>
     </>

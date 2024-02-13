@@ -4,7 +4,6 @@ import Products from "./../pages/Products/Products";
 import Blog from "./../pages/Blog/Blog";
 import Shop from "./../pages/Shop/Shop";
 import Contact from "./../pages/Contact/Contact";
-
 export const main_pages = [
   {
     component: <Home />,
