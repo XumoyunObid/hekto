@@ -32,7 +32,12 @@ const Footer = () => {
           <ul className="flex flex-col gap-[20px]">
             {FooterData.slice(0, 5).map((item) => (
               <li key={item.id}>
-                <Link className="text-[#8A8FB9] text-base" to={item.link}>{item.name}</Link>
+                <Link
+                  className="text-[#8A8FB9] hover:text-primaryPink text-base"
+                  to={item.link}
+                >
+                  {item.name}
+                </Link>
               </li>
             ))}
           </ul>
@@ -44,7 +49,9 @@ const Footer = () => {
           <ul className="flex flex-col gap-[20px]">
             {FooterData.slice(5, 10).map((item) => (
               <li key={item.id}>
-                <Link className="text-[#8A8FB9] text-base" to={item.link}>{item.name}</Link>
+                <Link className="text-[#8A8FB9] hover:text-primaryPink text-base" to={item.link}>
+                  {item.name}
+                </Link>
               </li>
             ))}
           </ul>
@@ -54,7 +61,9 @@ const Footer = () => {
           <ul className="flex flex-col gap-[20px]">
             {FooterData.slice(10, 16).map((item) => (
               <li key={item.id}>
-                <Link className="text-[#8A8FB9] text-base" to={item.link}>{item.name}</Link>
+                <Link className="text-[#8A8FB9] hover:text-primaryPink text-base" to={item.link}>
+                  {item.name}
+                </Link>
               </li>
             ))}
           </ul>
